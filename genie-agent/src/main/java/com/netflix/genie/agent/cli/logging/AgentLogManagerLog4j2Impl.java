@@ -90,6 +90,6 @@ public final class AgentLogManagerLog4j2Impl implements AgentLogManager {
 
         this.logFilePath.set(destinationAbsolutePath);
 
-        ConsoleLog.getLogger().info("Agent log file relocated to: " + destinationAbsolutePath);
+        ConsoleLog.getLogger().info("Agent log file relocated to: {}", destinationAbsolutePath);
     }
 }
